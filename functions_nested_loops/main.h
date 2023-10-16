@@ -1,6 +1,8 @@
+#ifndef _main_h
+#define _main_h
 #include <stdio.h>
 
-char print_alphabet(void)
+void print_alphabet(void)
 {
 	char ch;
 
@@ -9,5 +11,5 @@ char print_alphabet(void)
 		putchar(ch);
 	}
 	putchar('\n');
-	return (0);
 }
+#endif
