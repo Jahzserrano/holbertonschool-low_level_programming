@@ -1,6 +1,6 @@
-#include "main.h"
 #include <stdio.h>
-#include <unistd.h>
+#include <stdio.h>
+#include "main.h"
 /**
  * main - check the code
  *
@@ -21,7 +21,7 @@ void print_alphabet(void)
         {
                _putchar(ch);
         }
-        putchar('\n');
+       _putchar('\n');
 }
 
 /* print any char */
@@ -29,4 +29,3 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
-
