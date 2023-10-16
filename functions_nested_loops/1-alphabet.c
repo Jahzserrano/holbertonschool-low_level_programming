@@ -12,6 +12,12 @@ int main(void)
 	return (0);
 }
 
+/* print any char */
+int _putchar(char c)
+{
+        return (write(1, &c, 1));
+}
+
 /* print the alphabet */
 void print_alphabet(void)
 {
@@ -22,10 +28,4 @@ void print_alphabet(void)
                _putchar(ch);
         }
        _putchar('\n');
-}
-
-/* print any char */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
 }
