@@ -11,16 +11,15 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
 	if (n > 0)
 	{
 		puts("is positive\n");
 	}
-	if (n == 0)
+	else if (n == 0)
 	{
 		puts("is zero\n");
 	}
-	if (n < 0)
+	else if (n < 0)
 	{
 		puts("is negative\n");
 	}
