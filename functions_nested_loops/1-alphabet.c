@@ -1,24 +1,9 @@
-#include <unistd.h>
-#include <stdio.h>
 #include "main.h"
 /**
- * main - check the code
+ * print alphabet - print the alphabet
  *
  * Return: Always 0.
  */
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
-
-/* print any char */
-int _putchar(char c)
-{
-        return (write(1, &c, 1));
-}
-
-/* print the alphabet */
 void print_alphabet(void)
 {
         char ch;
@@ -27,5 +12,5 @@ void print_alphabet(void)
         {
                _putchar(ch);
         }
-       _putchar('\n');
+	_putchar('\n');
 }
