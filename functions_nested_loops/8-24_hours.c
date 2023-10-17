@@ -14,7 +14,7 @@ void jack_bauer(void)
 	/*For each hour 60 minutes*/
 	for (hl = 0; hl <= 2; hl++)
 	{
-		for (hr = 0; hr <= 3; hr++)
+		for (hr = 0; hr <= 9; hr++)
 		{
 			for (ml = 0; ml <= 5; ml++)
 			{
