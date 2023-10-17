@@ -12,6 +12,10 @@ int print_last_digit(int n)
 	{
 		ld = ((-1 * n) % 10);
 	}
+	else if (n == INT_MIN)
+	{
+		ld = -(n % 10);
+	}
 	else
 	{
 		ld = (n % 10);
