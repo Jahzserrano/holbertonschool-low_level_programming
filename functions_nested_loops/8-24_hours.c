@@ -26,6 +26,10 @@ void jack_bauer(void)
 					_putchar(ml + '0');
 					_putchar(mr + '0');
 					_putchar('\n');
+					if (hl == 2 && hr == 3)
+					{
+						return (0);
+					}
 				}
 			}
 		}
