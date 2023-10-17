@@ -6,28 +6,27 @@
  */
 void jack_bauer(void)
 {
-	int hour;
-	int min;
+	int hl;
+	int hr;
+	int ml;
+	int mr;
 
-	for (hour = 0; hour <= 23; hour++)
+	/*For each hour 60 minutes*/
+	for (hl = 0; hl <= 2; hl++)
 	{
-		for (min = 0; min <= 60; min++)
+		for (hr = 0; hr <= 3; hr++)
 		{
-			if (hour < 10 && min < 10)
+			for (ml = 0; ml <= 6; ml++)
 			{
-				_putchar('0');
-				_putchar(hour + '0');
-				_putchar(':');
-				_putchar('0');
-				_putchar(min + '0');
-				_putchar('\n');
-			}
-			else
-			{
-				_putchar(hour + '0');
-				_putchar(':');
-				_putchar(min + '0');
+				for (mr = 0; mr <= 9; mr++)
+				{
+					_putchar(hl + '0');
+					_putchar(hr + '0');
+					_putchar(':');
+					_putchar(ml + '0');
+					_putchar(mr + '0');
+					_putchar('\n');
+				}
 			}
 		}
 	}
-}
