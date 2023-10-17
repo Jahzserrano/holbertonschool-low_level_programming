@@ -16,6 +16,10 @@ void jack_bauer(void)
 	{
 		for (hr = 0; hr <= 9; hr++)
 		{
+			if (hl == 2 && hr == 4)
+			{
+				break;
+			}
 			for (ml = 0; ml <= 5; ml++)
 			{
 				for (mr = 0; mr <= 9; mr++)
@@ -26,10 +30,6 @@ void jack_bauer(void)
 					_putchar(ml + '0');
 					_putchar(mr + '0');
 					_putchar('\n');
-					if (hl == 2 && hr == 3)
-					{
-						return (0);
-					}
 				}
 			}
 		}
