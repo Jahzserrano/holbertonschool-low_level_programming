@@ -9,6 +9,7 @@ void print_triangle(int size)
 {
 	int w;
 	int h;
+	int c;
 
 	if (size <= 0)
 	{
@@ -18,14 +19,17 @@ void print_triangle(int size)
 	{
 		for (w = 0; w < size; w++)
 		{
-			if ((size - (h - 1)) > 0 && (size -(w - 1)) > 0)
+			c = (size - h);
+			if ( c == 0)
 			{
 				_putchar(' ');
+
 			}
 			else
 			{
 				_putchar('#');
 			}
+			c--;
 
 		}
 	}
