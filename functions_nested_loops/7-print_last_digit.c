@@ -19,7 +19,7 @@ int print_last_digit(int n)
 	{
 		ld = 217483648;
 		_putchar((ld % 10) + '0');
-		return ((ld % 10) + '0');
+		return (ld % 10);
 	}
 	else
 	{
