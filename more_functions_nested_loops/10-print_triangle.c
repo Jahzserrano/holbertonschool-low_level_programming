@@ -19,17 +19,15 @@ void print_triangle(int size)
 	{
 		for (w = 0; w < size; w++)
 		{
-			c = (size - h);
-			if ( c == 0)
+			if ((size - h) == w)
 			{
-				_putchar(' ');
+				_putchar('#');
 
 			}
 			else
 			{
-				_putchar('#');
+				_putchar(' ');
 			}
-			c--;
 		}
 		_putchar('\n');
 	}
