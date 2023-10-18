@@ -8,6 +8,7 @@
 int print_last_digit(int n)
 {
 	int ld;
+	long n;
 
 	if (n < 0)
 	{
@@ -16,9 +17,9 @@ int print_last_digit(int n)
 	}
 	else if (n == INT_MIN)
 	{
-	
-		_putchar((n % 10) + 10);
-		return ((n % 10) + 10);
+		ld = 217483648;
+		_putchar((ld % 10) + '0');
+		return ((ld % 10) + '0');
 	}
 	else
 	{
