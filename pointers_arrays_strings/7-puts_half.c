@@ -3,12 +3,12 @@
  * puts_half - function that prints half og a string
  * @str: holds varibale to be printed
  */
+
 void puts_half(char *str)
 {
 	int n, len;
 
 	len = 0;
-	len1 = 0;
 
 	while (str[len] != '\0')
 	{
