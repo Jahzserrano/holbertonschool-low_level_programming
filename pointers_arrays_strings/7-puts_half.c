@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * puts_half - function that prints half og a string
- * @str: holds varibale to be printed 
+ * @str: holds varibale to be printed
  *
  * Return: void
  */
