@@ -8,8 +8,11 @@
  */
 void rev_string(char *s)
 {
-	int len, i;
-	char *end, *begin, tmp;
+	int len;
+	int i;
+	char *end;
+	char *begin;
+	char tmp;
 
 	len = strlen(s);
 
