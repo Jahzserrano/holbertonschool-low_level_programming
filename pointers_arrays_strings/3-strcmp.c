@@ -9,34 +9,17 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int i, res_s1, res_s2;
-	int len_s1, len_s2;
+	char c1, c2;
 
-	len_s1 = strlen(s1);
-	len_s2 = strlen(s2);
-	res_s1 = 0;
-	res_s2 = 0;
-
-	printf("len_s1: %d\nlen_s2: %d\n", len_s1, len_s2);
-	if (len_s1 > len_s2)
-		return (15);
-
-	if (len_s1 < len_s2)
-		return (-15);
-
-	for (i = 0; i < len_s1 && s1[i] != '\0'; i++)
+	do 
 	{
-		res_s1 = res_s1 + (int)s1[i];
-		res_s2 = res_s2 + (int)s2[i];
-
-		printf("res_s1: %d\nres_s2: %d\n", res_s1, res_s2);
+		c1 = *s1++;
+		c2 = *s2++;
+		if (c1 == '\0')
+			return (c1 - c2);
 	}
-	if (res_s1 > res_s2)
-		return (15);
+	while (c1 == c2);
 
-	if (res_s1 < res_s2)
-		return (-15);
+	return (c1 - c2);
 
-	else
-		return (0);
 }
