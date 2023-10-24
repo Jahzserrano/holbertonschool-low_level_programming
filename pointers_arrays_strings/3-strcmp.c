@@ -24,7 +24,7 @@ int _strcmp(char *s1, char *s2)
 	if (len_s1 < len_s2)
 		return (-15);
 
-	for (i = 0; i < len_s1; i++)
+	for (i = 0; i < len_s1 && str[i] != '\0'; i++)
 	{
 		res_s1 = res_s1 + (int)s1[i];
 		res_s2 = res_s2 + (int)s2[i];
