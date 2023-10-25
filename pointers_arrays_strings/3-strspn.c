@@ -11,6 +11,7 @@ unsigned int _strspn(char *s, char *accept)
 	/* length */
 	unsigned int c = 1;
 	int i = strlen(accept);
+	unsigned int index = 1;
 
 	while (i > 0)
 	{
@@ -23,8 +24,10 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		if (c == strlen(accept))
 			return (0);
+
+		index++;
 		s++;
 		i--;
 	}
-	return (c);
+	return (index);
 }
