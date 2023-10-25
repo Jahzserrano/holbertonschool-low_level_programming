@@ -7,8 +7,8 @@
 char *leet(char *str)
 {
 	char *tmp = str;
-	char key[] = {'A', 'E', 'I', '0', 'U'};
-	int value[] = {4, 3, 2, 1, 0};
+	char key[] = {'A', 'E', 'O', 'T', 'L'};
+	int value[] = {4, 3, 0, 7, 1};
 	unsigned int i;
 
 	while (*str)
@@ -17,7 +17,7 @@ char *leet(char *str)
 		{
 			if (*str == key[i] || *str == key[i] + 32)
 			{
-				*str = 48 + value[i];
+				*str = value[i] + '0';
 			}
 		}
 		str++;
