@@ -16,7 +16,7 @@ char *cap_string(char *str)
 			char tmp;
 
 			tmp = str[i - 1];
-			if (tmp == '	' || tmp == '\n')
+			if (tmp == '\t' || tmp == '\n')
 				str[i] = str[i] - 32;
 
 			if (tmp == '{' || tmp == '}')
@@ -33,7 +33,6 @@ char *cap_string(char *str)
 
 			if (tmp == ' ' || tmp == '"')
 				str[i] = str[i] - 32;
-
 		}
 		i++;
 	}
