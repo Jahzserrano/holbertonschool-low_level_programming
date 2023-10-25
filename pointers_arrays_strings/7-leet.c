@@ -6,44 +6,21 @@
  */
 char *leet(char *str)
 {
-	int i;
+	char *tmp = str;
+	char key[] = {'A', 'E', 'I', '0', 'U'};
+	int value[] = {4, 3, 2, 1, 0};
+	unsigned int i;
 
-	i = 0;
-	while (str[i] != '\0')
+	while (*str)
 	{
-		if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z'))
+		for (i = 0; i < sizeof(key) / sizeof(char); i++)
 		{
-			if (str[i] == 'a')
-				str[i] = str[i] - 45;
-
-			if (str[i] == 'A')
-				str[i] = str[i] - 13;
-
-			if (str[i] == 'e')
-				str[i] = str[i] - 50;
-
-			if (str[i] == 'E')
-				str[i] = str[i] - 18;
-
-			if (str[i] == 'o')
-				str[i] = str[i] - 63;
-
-			if (str[i] == 'O')
-				str[i] = str[i] - 31;
-
-			if (str[i] == 't')
-				str[i] = str[i] - 61;
-
-			if (str[i] == 'T')
-				str[i] = str[i] - 29;
-
-			if (str[i] == 'l')
-				str[i] = str[i] - 59;
-
-			if (str[i] == 'L')
-				str[i] = str[i] - 27;
+			if (*str == key[i] || *str == key[i] + 32)
+			{
+				*str = 48 + value[i];
+			}
 		}
-		i++;
+		str++;
 	}
-	return (str);
+	return (tmp);
 }
