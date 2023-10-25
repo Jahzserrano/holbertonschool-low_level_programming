@@ -8,26 +8,26 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	/* length */
-	unsigned int c = 1;
-	int i = strlen(accept);
-	unsigned int index = 1;
+	unsigned int len = 0;
 
-	while (i > 0)
+	while (*s)
 	{
-		while (*accept)
-		{
-			if (*s == *accept)
-				break;
-			c++;
-			accept++;
-		}
-		if (c == strlen(accept))
-			return (0);
+		char *ptr = accept;
+		int found = 0;
 
-		index++;
-		s++;
-		i--;
+		while (*ptr)
+		{
+			if (*s == *ptr)
+			{
+				found = 1;
+				break;
+			}
+			ptr++;
+		}
+		if (!found)
+			break;
+		len++;
+		s++; 	
 	}
-	return (index);
+	return (len);
 }
