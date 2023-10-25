@@ -8,13 +8,7 @@
  */
 char *_strchr(char *s, char c)
 {
-	while (*s)
-	{
-		if (*s == c)
-			return (s);
-		if (!*s)
-			return (NULL);
-		s++;
-	}
-	return (NULL);
+	while (*s && *s != c)
+		++s;
+	return ((char *)(c == *s ? s : NULL));
 }
