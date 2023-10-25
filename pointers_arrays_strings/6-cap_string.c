@@ -33,6 +33,8 @@ char *cap_string(char *str)
 
 			if (tmp == ' ' || tmp == '"')
 				str[i] = str[i] - 32;
+			if (i == 0)
+				str[i] = str[i] - 32;
 		}
 		i++;
 	}
