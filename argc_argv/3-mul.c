@@ -13,7 +13,7 @@ int main(int argc, char **argv)
 	if (!argv[1])
 	{
 		printf("Error\n");
-		return (0);
+		return (1);
 	}
 
 	(void)argc;
