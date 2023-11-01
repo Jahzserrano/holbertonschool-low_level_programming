@@ -2,14 +2,14 @@
 #include <stdio.h>
 /**
  * main - Entry Point
- * @argc - count of arguments
- * @argv - array of strings.
+ * @argc: count of arguments
+ * @argv: array of strings.
  * Return: Always 0.
  */
 int main(int argc, char **argv)
 {
 	(void)argv;
-	print_args(argc);
+	print_args(argc - 1);
 	return (0);
 }
 /**
