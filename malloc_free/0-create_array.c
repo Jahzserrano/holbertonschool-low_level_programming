@@ -4,7 +4,7 @@
  * create_array - fuction taht creates an array of chars
  * @size: array's size
  * @c: specific char to initialize
- * Return: 0 
+ * Return: 0
  */
 char *create_array(unsigned int size, char c)
 {
