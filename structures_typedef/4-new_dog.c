@@ -8,11 +8,11 @@ dog_t *new_dog(char *name, float age, char *owner);
  * @str: string to evaluate
  * Return: 0
  */
-int *_strlen(char *s)
+int _strlen(char *str)
 {
 	int len = 0;
 
-	while (*s++)
+	while (*str++)
 		len++;
 
 	return (len);
