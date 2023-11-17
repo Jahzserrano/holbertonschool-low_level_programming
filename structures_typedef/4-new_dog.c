@@ -8,7 +8,7 @@ dog_t *new_dog(char *name, float age, char *owner);
  * @str: string to evaluate
  * Return: 0
  */
-int _strlen(char *str)
+int *_strlen(char *s)
 {
 	int len = 0;
 
