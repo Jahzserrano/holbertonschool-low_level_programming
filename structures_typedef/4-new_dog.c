@@ -8,7 +8,7 @@ dog_t *new_dog(char *name, float age, char *owner);
  * @str: string to evaluate
  * Return: 0
  */
-int _strlen(char *str)
+int strlen(char *str)
 {
 	int len = 0;
 
@@ -51,14 +51,14 @@ dog_t *doggo;
 	if (doggo == NULL)
 		return (NULL);
 
-	doggo->name = malloc(sizeof(char) * (_strlen(name) + 1));
+	doggo->name = malloc(sizeof(char) * (strlen(name) + 1));
 	if (doggo->name == NULL)
 	{
 		free(doggo);
 		return (NULL);
 	}
 
-	doggo->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
+	doggo->owner = malloc(sizeof(char) * (strlen(owner) + 1));
 	if (doggo->owner == NULL)
 	{
 		free(doggo->name);
