@@ -4,7 +4,7 @@
 char *_strcopy(char *dest, char *src);
 dog_t *new_dog(char *name, float age, char *owner);
 /**
- * _strlen - return string length
+ * __strlen - return string length
  * @str: string to evaluate
  * Return: 0
  */
