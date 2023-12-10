@@ -6,14 +6,6 @@
  * @letters: number of letters the function should read and print
  * Return: NULL
  */
-#include "main.h"
-#include <stdlib.h>
-/**
- * read_textfile - function that reads a file ant prints to POSIX
- * @filename: pointer to the name of the file
- * @letters: number of letters the function should read and print
- * Return: NULL
- */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t o, r, w;
